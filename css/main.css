@@ -4,3 +4,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+header {
+    border-bottom: 4px solid white;
+    height: auto;
+}
+.nav {
+
+}
+.nav-links {
+    
+}

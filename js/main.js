@@ -9,7 +9,7 @@ function showLandscapeMessage() {
   }
   
   window.addEventListener('orientationchange', function() {
-    if (window.orientation === 0 || window.orientation === 180) {
+    if (screen.orientation.type === "portrait-primary" || screen.orientation.type === "portrait-secondary") {
       showLandscapeMessage();
     } else {
       dismissLandscapeMessage();

@@ -40,13 +40,14 @@ a.buy-ticket {
 div.first-half {
     display: flex;
     place-content: center;
+    margin: 0;
 }
 h1.date {
     font-size: 100px;
     color: white;
     text-align: center;
     line-height: 1em;
-    font-weight: 1000;
+    font-weight: 600;
     font-family: 'Poppins', serif;
     margin-bottom: 70px;
     margin-top: 300px;
@@ -55,9 +56,46 @@ h1.buy-ticket-2 {
     padding: 20px;
     border: 6px solid white;
     border-radius: 15px;
-    font-weight: 1000;
+    font-weight: 600;
     font-family: 'Poppins', serif;
     font-size: 40px;
     display: inline-block;
     color: white;
+}
+h1.web-dev {
+    font-size: 100px;
+    color: white;
+    font-family: 'Poppins', serif;
+    font-weight: 800;
+    margin-top: 200px;
+    padding-left: 80px;
+}
+div.time-stamp {
+    float: right;
+    margin-right: 100px;
+    margin-top: 80px;
+}
+div.timeboxes {
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+}
+p.time-number {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    font-weight: 800;
+    font-family: 'Poppins', serif;
+    font-size: 50px;
+    margin: 0;
+    line-height: 1;
+}
+p.time-summary {
+    color: white;
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
 }

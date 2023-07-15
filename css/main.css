@@ -62,12 +62,12 @@ h1.buy-ticket-2 {
     display: inline-block;
     color: white;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 h1.buy-ticket-2:hover {
     background-color: white;
     opacity: 0.5;
     color: black;
-    transition-duration: 0.5s;
 }
 h1.web-dev {
     font-size: 100px;

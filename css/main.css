@@ -1,6 +1,6 @@
-body {
+body.home-body {
     margin: 0;
-    background-image: url("../images/background-image.png");
+    background-image: url("../images/home-bg.image.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -105,4 +105,27 @@ p.time-summary {
     font-size: 20px;
     margin: 0;
     line-height: 1;
+}
+body.about-body {
+    margin: 0;
+    background-image: url("../images/about-bg-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header.about-header {
+    background-color: #2300F9;
+}
+div.about-nav {
+    display: inline-block;
+    display: flex;
+    place-content: center;  
+}
+h1.dreams-txt {
+    font-size: 60px;
+    color: black;
+    font-family: 'Poppins', serif;
+    font-weight: 800;
+    margin-top: 80px;
+    padding-left: 80px;
+    text-align: center;
 }

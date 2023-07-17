@@ -129,3 +129,19 @@ h1.dreams-txt {
     padding-left: 80px;
     text-align: center;
 }
+div.ill-container {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+div.illustration {
+    border: 0;
+    background-color: transparent;
+}
+div.illustration-footer {
+    border: 0;
+    background-color: transparent;
+}
+h3.illustration-text {
+    font-family: 'Poppins', serif;
+    font-weight: 800;
+}

@@ -99,9 +99,15 @@ h1.web-dev {
     padding-left: 80px;
 }
 
+h3.web-dev {
+    font-size: 45px;
+    color: white;
+    font-family: 'Poppins', serif;
+    font-weight: 800;
+    margin-top: 100px;
+}
+
 div.time-stamp {
-    float: right;
-    margin-right: 100px;
     margin-top: 80px;
 }
 
@@ -139,10 +145,6 @@ body.about-body {
     background-size: cover;
 }
 
-header.about-header {
-    background-color: #2300F9;
-}
-
 div.about-nav {
     display: inline-block;
     display: flex;
@@ -154,7 +156,6 @@ h1.dreams-txt {
     color: black;
     font-family: 'Poppins', serif;
     font-weight: 800;
-    margin-top: 50px;
     text-align: center;
     line-height: 1.4;
 }

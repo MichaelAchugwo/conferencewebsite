@@ -6,22 +6,32 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="images/g14 icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Conference Website</title>
 </head>
 <body class="about-body">
-    <header class="about-header">
-       <div class="nav py-4 mx-auto about-nav">
-            <a href="index.html" class="nav-links">Home</a>
-            <a href="about.html" class="nav-links">About</a>
-            <a href="speakers.html" class="nav-links">Speakers</a>
-            <a href="schedule.html" class="nav-links">Schedule</a>
-            <a href="speakers.html" class="nav-links">Registration</a>
-            <a href="venue.html" class="nav-links">Venue</a>
-            <a href="sponsors.html" class="nav-links">Sponsors</a>
-       </div> 
-    </header>
-    <h1 class="dreams-txt col-9 mx-auto">All our dreams can come true, <span style="color:#2300F9">if we have the courage to pursue them</span></h1>
+    <div class="container-fluid w-100 sticky-top bg-dark about-header">
+        <div class="align-items-center py-3 h-0">
+            <div class="w-auto d-lg-inline-block">
+                <a class="logo px-3 px-lg-5 d-inline-block d-lg-inline-block text-lg-left"><img src="images/logo.png" alt="Group 14 logo" height="50px"></a>
+                <div class="d-inline-block d-lg-none float-right pr-3">
+                    <a id="nav-expand-btn" style="font-size:30px; cursor:pointer"><i class="fa-solid fa-bars" id="navBtn"></i></a>
+                </div>
+            </div>
+            <div class="d-lg-inline-block mx-3 my-2 text-center float-lg-right" id="nav-items">
+                <a href="index.html" class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block">Home</a>
+                <a href="about.html" class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block">About</a>
+                <a href="speakers.html" class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block">Speakers</a>
+                <a href="schedule.html" class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block">Schedule</a>
+                <a href="speakers.html" class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block">Registration</a>
+                <a href="venue.html" class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block">Venue</a>
+                <a href="sponsors.html" class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block">Sponsors</a>
+            </div>
+        </div>
+    </div>
+    <h1 class="dreams-txt col-9 mx-auto mt-4 mt-lg-5">All our dreams can come true, <span style="color:#2300F9">if we have the courage to pursue them</span></h1>
     <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 w-auto mx-auto text-center place-items-center ill-container mb-3 pl-0 pl-lg-5 pt-5">
         <div class="col card illustration">
             <div class="card-img text-center">
@@ -57,8 +67,10 @@
         </div>
     </div>
 
+    
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/276652a6bf.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

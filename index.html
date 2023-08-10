@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/g14 icon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="images/g14 icon.png" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,7 +26,7 @@
     <title>Conference Website</title>
   </head>
 
-  <body class="home-body">
+  <body>
     <div class="container-fluid w-100 sticky-top bg-dark header">
       <div class="align-items-center py-3 h-0">
         <div class="w-auto d-lg-inline-block">
@@ -27,7 +35,7 @@
             ><img src="images/logo.png" alt="Group 14 logo" height="50px"
           /></a>
           <div class="d-inline-block d-lg-none float-right pr-3">
-            <a id="nav-expand-btn" style="font-size: 30px; cursor: pointer"
+            <a id="nav-expand-btn"
               ><i class="fa-solid fa-bars" id="navBtn"></i
             ></a>
           </div>
@@ -37,38 +45,38 @@
           id="nav-items"
         >
           <a
-            href="index.html"
             class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block"
+            id="homePage"
             >Home</a
           >
           <a
-            href="about.html"
             class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block"
+            id="aboutPage"
             >About</a
           >
           <a
-            href="speakers.html"
             class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block"
+            id="speakersPage"
             >Speakers</a
           >
           <a
-            href="schedule.html"
             class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block"
+            id="schedulePage"
             >Schedule</a
           >
           <a
-            href="speakers.html"
             class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block"
+            id="registrationPage"
             >Registration</a
           >
           <a
-            href="venue.html"
             class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block"
+            id="venuePage"
             >Venue</a
           >
           <a
-            href="sponsors.html"
             class="nav-links px-2 py-2 py-lg-0 d-block d-lg-inline-block"
+            id="sponsorsPage"
             >Sponsors</a
           >
           <a href="" class="buy-ticket py-2 py-lg-0 d-block d-lg-inline-block"
@@ -77,38 +85,169 @@
         </div>
       </div>
     </div>
-    <div class="row m-0">
-      <div class="col-12 col-lg-4 first-half">
-        <div class="first-part">
-          <h1 class="date">14<br />JULY</h1>
-          <h1 class="buy-ticket-2">BUY TICKET</h1>
+    <div class="home-body" id="home-body">
+      <div class="row m-0">
+        <div class="col-12 col-lg-4 first-half">
+          <div class="first-part">
+            <h1 class="date">14<br />JULY</h1>
+            <h1 class="buy-ticket-2">BUY TICKET</h1>
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-8 text-center">
-        <h1 class="web-dev d-none d-lg-block">
-          WEB<br />DEVELOPMENT<br />CONFERENCE
-        </h1>
-        <h3 class="web-dev d-block d-lg-none text-center">
-          WEB<br />DEVELOPMENT<br />CONFERENCE
-        </h3>
-        <div
-          class="d-inline-block text-align-center time-stamp mr-lg-5 mb-5 float-lg-right mt-5"
-        >
-          <div class="timeboxes">
-            <p class="time-number">15</p>
-            <p class="time-summary">DAYS</p>
-          </div>
-          <div class="timeboxes">
-            <p class="time-number">08</p>
-            <p class="time-summary">HOURS</p>
-          </div>
-          <div class="timeboxes">
-            <p class="time-number">23</p>
-            <p class="time-summary">MINUTES</p>
+        <div class="col-12 col-lg-8 text-center text-lg-left">
+          <h1 class="web-dev d-none d-lg-block">
+            WEB<br />DEVELOPMENT<br />CONFERENCE
+          </h1>
+          <h3 class="web-dev d-block d-lg-none text-center">
+            WEB<br />DEVELOPMENT<br />CONFERENCE
+          </h3>
+          <div
+            class="d-inline-block text-align-center time-stamp mr-lg-5 mb-5 float-lg-right mt-5"
+          >
+            <div class="timeboxes">
+              <p class="time-number">15</p>
+              <p class="time-summary">DAYS</p>
+            </div>
+            <div class="timeboxes">
+              <p class="time-number">08</p>
+              <p class="time-summary">HOURS</p>
+            </div>
+            <div class="timeboxes">
+              <p class="time-number">23</p>
+              <p class="time-summary">MINUTES</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="about-body hide" id="about-body">
+      <h1 class="dreams-txt col-9 mx-auto">
+        All our dreams can come true,
+        <span class="color1">if we have the courage to pursue them</span>
+      </h1>
+      <div
+        class="row row-cols-2 row-cols-md-4 row-cols-lg-5 w-auto mx-auto text-center place-items-center ill-container pl-0 pl-lg-5 pt-5"
+      >
+        <div class="col card illustration">
+          <div class="card-img text-center">
+            <img
+              src="images/vision-speaker-illustration.png"
+              width="140px"
+              alt="Vision Speaker Illustration"
+            />
+          </div>
+          <div class="card-footer illustration-footer mx-auto">
+            <h3 class="illustration-text">Visionary<br />Speaker</h3>
+          </div>
+        </div>
+        <div class="col card illustration">
+          <div class="card-img-top text-center">
+            <img
+              src="images/worldwide-events-illustration.png"
+              width="140px"
+              alt="Worldwide Events Illustration"
+            />
+          </div>
+          <div class="card-footer illustration-footer mx-auto">
+            <h3 class="illustration-text">Worldwide<br />Events</h3>
+          </div>
+        </div>
+        <div class="col card illustration">
+          <div class="card-img text-center">
+            <img
+              src="images/levelup-skills-illustration.png"
+              width="140px"
+              alt="Level-up Your Skills Illustration"
+            />
+          </div>
+          <div class="card-footer illustration-footer mx-auto">
+            <h3 class="illustration-text">Level-up Your<br />Skills</h3>
+          </div>
+        </div>
+        <div class="col card illustration">
+          <div class="card-img text-center">
+            <img
+              src="images/help-find-illustration.png"
+              width="140px"
+              alt="Help find your Tribe Illustration"
+            />
+          </div>
+          <div class="card-footer illustration-footer mx-auto">
+            <h3 class="illustration-text">Help Find Your<br />Tribe</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="speakers-body hide" id="speakers-body">
+      <h1 class="our-speakers text-center text-lg-left ml-0 ml-lg-5">
+        Our<br /><span style="color:#2300F9">Speakers</span>
+    </h1>
+
+    <div class="row speakers-row px-3 text-center pb-3">
+      <div class="col-5 col-lg-2 px-0 speaker-pictures mx-auto mb-4 border-0 h-auto">
+        <img src="images/mr-amadi.png" alt="Mr Amadi" class="img-fluid pb-2">
+        <h4 class="speaker-name">MR AMADI</h2>
+        <h6 class="speaker-job">LECTURER</h4>
+      </div>
+      <div class="col-5 col-lg-2 px-0 speaker-pictures mx-auto border-0 h-auto">
+        <img src="images/ojiaku-prosper.png" alt="Ojiaku Prosper" class="img-fluid pb-2">
+        <h4 class="speaker-name">OJIAKU PROSPER</h2>
+        <h6 class="speaker-job">CEO AT DEVPLACE</h4>
+      </div>
+      <div class="col-5 col-lg-2 px-0 speaker-pictures mx-auto border-0 h-auto">
+        <img src="images/ndubuisi-izuchukwu.png" alt="Mr Amadi" class="img-fluid pb-2">
+        <h4 class="speaker-name">NDUBUISI IZUCHUKWU</h2>
+        <h6 class="speaker-job">CEO AT DEVPLACE</h4>
+      </div>
+      <div class="col-5 col-lg-2 px-0 speaker-pictures mx-auto border-0 h-auto">
+        <img src="images/achugwo-michael.png" alt="Mr Amadi" class="img-fluid pb-2">
+        <h4 class="speaker-name">ACHUGWO MICHAEL IKENNA</h4>
+        <h6 class="speaker-job">STUDENT AT FUTO</h6>
+      </div>
+    </div>
+    </div>
+    <div class="schedule-body hide" id="schedule-body">
+      <div class="pl-lg-5 text-center text-lg-left pt-5">
+        <h1
+          class=""
+          style="
+            color: #2300f9;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            line-height: 1;
+            font-family: 'Poppins', serif;
+            font-weight: 600;
+            font-size: 50px;
+          "
+        >
+          Event
+        </h1>
+        <h1
+          class="pl-4"
+          style="
+            margin-block-start: 0;
+            margin-block-end: 0;
+            line-height: 1;
+            font-family: 'Poppins', serif;
+            font-weight: 800;
+            font-size: 50px;
+            color: black;
+          "
+        >
+          Schedule
+        </h1>
+      </div>
+      <div class="schedule-nav">
+        <a id="all-topics" class="p-2">All Topics</a>
+        <a id="business-schedule" class="p-2">Business</a>
+        <a id="engineer-schedule" class="p-2">Engineering</a>
+        <a id="growth-schedule" class="p-2">Growth</a>
+        <a id="platform-schedule" class="p-2">Platform</a>
+      </div>
+    </div>
+    <div class="registration-body hide" id="registration-body"></div>
+    <div class="venue-body hide" id="venue-body"></div>
+    <div class="sponsors-body hide" id="sponsors-body"></div>
+
 
     <script src="js/main.js"></script>
     <script

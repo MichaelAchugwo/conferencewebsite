@@ -13,6 +13,7 @@ div.home-body {
 div.header {
     border-bottom: 4px solid white;
     height: auto;
+    background-color: black;
 }
 
 div.header > a {
@@ -39,8 +40,9 @@ a.nav-links {
 }
 
 a.buy-ticket {
-    background-color: blue;
-    border-radius: 5px;
+    background-color: #2e8480;
+    border-radius: 15px;
+    padding: 10px 20px 10px 10px;
 }
 
 a.nav-links:hover {
@@ -177,9 +179,8 @@ h1.our-speakers {
     line-height: 0.9;
 }
 
-body.schedule-body {
-    background-color: #D9D9D9;
-    animation: fadeInFromNone 1.2s ease-out;
+div.schedule-body {
+    background-color: #19847F;
 }
 
 div.schedule-nav > a {
@@ -197,7 +198,7 @@ a.active {
 }
 
 div.days {
-    background-color: #D9D9D9;
+    background-color: #19847F;
     height: auto;
 }
 
@@ -209,7 +210,6 @@ div.days {
 div.days > a {
     font-size: 20px;
     text-decoration: none;
-    border-radius: 10px;
     color: black;
     font-family: 'Poppins', serif;
     font-weight: 800;
@@ -220,11 +220,9 @@ div.days > a {
     margin-block-start: 0;
     margin-block-end: 0;
 }
-
-div.schedule-body {
-    background-color: #E6F4F3;
+.black {
+    background-color: black;
 }
-
 form.questions-form {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -237,12 +235,8 @@ button.submit {
     font-weight: 600;
 }
 
-input.form-control::placeholder {
-    color: white;
-}
-
 input.form-control, textarea.form-control {
-    background-color: #D9D9D9;
+    background-color: white;
 }
 
 form.questions-form > input {
@@ -270,10 +264,11 @@ h2.venue {
     padding-top: 30px;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 div.venue-body {
-    background-color: #E8FBF9;
+    background-color: #3ea5a0;
 }
 
 .map {

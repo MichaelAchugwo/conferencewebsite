@@ -38,6 +38,11 @@ a.nav-links {
     cursor: pointer;
 }
 
+a.buy-ticket {
+    background-color: blue;
+    border-radius: 5px;
+}
+
 a.nav-links:hover {
     color: white;
 }
@@ -196,6 +201,7 @@ h1.our-speakers {
 
 body.schedule-body {
     background-color: #D9D9D9;
+    animation: fadeInFromNone 1.2s ease-out;
 }
 
 div.schedule-nav > a {
@@ -282,16 +288,12 @@ div.speakers-row {
     margin-top: 50px;
 }
 
-div.show {
-    display: block;
-    animation: fadeInFromNone 1.2s ease-out;
-}
-
 h2.venue {
     margin-top: 30px;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
 }
+
 .map {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -312,8 +314,4 @@ h2.venue {
         display: block;
         opacity: 1;
     }
-}
-
-div.hide {
-    display: none;
 }

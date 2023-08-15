@@ -2,24 +2,17 @@
 var navExpandBtn = document.getElementById("nav-expand-btn");
 var navItems = document.getElementById("nav-items");
 var navLinks = document.getElementsByClassName("nav-links");
-var allTopics = document.getElementById("all-topics");
-var businessSchedule = document.getElementById("business-schedule");
-var engineerSchedule = document.getElementById("engineer-schedule");
-var growthSchedule = document.getElementById("growth-schedule");
-var platformSchedule = document.getElementById("platform-schedule");
 var homeBody = document.getElementById("home-body");
 var aboutBody = document.getElementById("about-body");
 var speakersBody = document.getElementById("speakers-body");
 var venueBody = document.getElementById("venue-body");
 var scheduleBody = document.getElementById("schedule-body");
-var sponsorsBody = document.getElementById("sponsors-body");
 var registrationBody = document.getElementById("registration-body");
 var homeButton = document.getElementById("homePage");
 var aboutButton = document.getElementById("aboutPage");
 var speakersButton = document.getElementById("speakersPage");
 var venueButton = document.getElementById("venuePage");
 var scheduleButton = document.getElementById("schedulePage");
-var sponsorsButton = document.getElementById("sponsorsPage");
 var registrationButton = document.getElementById("registrationPage");
 
 //Making the navbar responsive
@@ -34,101 +27,34 @@ navExpandBtn.addEventListener("click", function () {
   }
 });
 
-//Changing the page contents based on the navigation items clicked
-homeBody.classList.add("show");
+
+registrationButton.addEventListener("click", function () {
+
+});
+
 homeButton.addEventListener("click", function () {
-  homeBody.classList.add("show");
-  homeBody.classList.remove("hide");
-  aboutBody.classList.add("hide");
-  speakersBody.classList.add("hide");
-  scheduleBody.classList.add("hide");
-  sponsorsBody.classList.add("hide");
-  registrationBody.classList.add("hide");
-  venueBody.classList.add("hide");
-  navItems.style.display = "none";
-  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 });
 
 aboutButton.addEventListener("click", function () {
-  aboutBody.classList.add("show");
-  aboutBody.classList.remove("hide");
-  homeBody.classList.add("hide");
-  speakersBody.classList.add("hide");
-  scheduleBody.classList.add("hide");
-  sponsorsBody.classList.add("hide");
-  registrationBody.classList.add("hide");
-  venueBody.classList.add("hide");
-  navItems.style.display = "none";
-  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+  document.body.scrollTop = 618;
+  document.documentElement.scrollTop = 618;
 });
 
 speakersButton.addEventListener("click", function () {
-  speakersBody.classList.add("show");
-  speakersBody.classList.remove("hide");
-  aboutBody.classList.add("hide");
-  homeBody.classList.add("hide");
-  scheduleBody.classList.add("hide");
-  sponsorsBody.classList.add("hide");
-  registrationBody.classList.add("hide");
-  venueBody.classList.add("hide");
-  navItems.style.display = "none";
-  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-});
-
-sponsorsButton.addEventListener("click", function () {
-  sponsorsBody.classList.add("show");
-  sponsorsBody.classList.remove("hide");
-  aboutBody.classList.add("hide");
-  homeBody.classList.add("hide");
-  scheduleBody.classList.add("hide");
-  speakersBody.classList.add("hide");
-  registrationBody.classList.add("hide");
-  venueBody.classList.add("hide");
-  navItems.style.display = "none";
-  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-});
-
-registrationButton.addEventListener("click", function () {
-  registrationBody.classList.add("show");
-  registrationBody.classList.remove("hide");
-  aboutBody.classList.add("hide");
-  homeBody.classList.add("hide");
-  scheduleBody.classList.add("hide");
-  speakersBody.classList.add("hide");
-  sponsorsBody.classList.add("hide");
-  venueBody.classList.add("hide");
-  navItems.style.display = "none";
-  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-});
-
-venueButton.addEventListener("click", function () {
-  venueBody.classList.add("show");
-  venueBody.classList.remove("hide");
-  aboutBody.classList.add("hide");
-  homeBody.classList.add("hide");
-  scheduleBody.classList.add("hide");
-  speakersBody.classList.add("hide");
-  sponsorsBody.classList.add("hide");
-  registrationBody.classList.add("hide");
-  navItems.style.display = "none";
-  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+  document.body.scrollTop = 1218;
+  document.documentElement.scrollTop = 1218;
 });
 
 scheduleButton.addEventListener("click", function () {
-    scheduleBody.classList.add("show");
-    scheduleBody.classList.remove("hide");
-    aboutBody.classList.add("hide");
-    homeBody.classList.add("hide");
-    registrationBody.classList.add("hide");
-    speakersBody.classList.add("hide");
-    venueBody.classList.add("hide");
-    navItems.style.display = "none";
-    navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-  });
-// function changePage(bodyToOpen, arrayNum) {
-//     navLinks[arrayNum].addEventListener("click", function(){
+  document.body.scrollTop = 1816;
+  document.documentElement.scrollTop = 1816;
+});
 
-//     })
-// }
+venueButton.addEventListener("click", function () {
+  document.body.scrollTop = 2685;
+  document.documentElement.scrollTop = 2685;
+});
 
-// aboutBody
+

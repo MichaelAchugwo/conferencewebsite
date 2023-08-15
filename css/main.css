@@ -146,12 +146,6 @@ div.about-body {
     background-size: cover;
 }
 
-div.about-nav {
-    display: inline-block;
-    display: flex;
-    place-content: center;
-}
-
 p.about-text {
     line-height: 2;
     font-weight: 600;
@@ -164,27 +158,6 @@ h1.about-txt {
     font-weight: 800;
     text-align: center;
     line-height: 1.4;
-}
-
-div.illustration {
-    border: 0;
-    background-color: transparent;
-}
-
-div.illustration-footer {
-    border: 0;
-    background-color: transparent;
-}
-
-h3.illustration-text {
-    font-family: 'Poppins', serif;
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: black;
-}
-
-div.ill-container {
-    padding-bottom: 100px;
 }
 
 body.speakers-body {

@@ -152,6 +152,12 @@ div.about-nav {
     place-content: center;
 }
 
+p.about-text {
+    line-height: 2;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
 h1.dreams-txt {
     font-size: 50px;
     color: black;
@@ -253,7 +259,7 @@ form.questions-form {
     color: black;
 }
 
-form.questions-form > button {
+button.submit {
     background-color: #DC9C61;
     color: white;
     font-weight: 600;
@@ -297,21 +303,4 @@ h2.venue {
 .map {
     margin-top: 20px;
     margin-bottom: 50px;
-}
-
-@keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
 }

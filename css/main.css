@@ -224,21 +224,20 @@ div.schedule-nav > a {
 
 a.active {
     background-color: #DC9C61;
-    color: white;
-    font-weight: 600;
 }
 
 div.days {
     background-color: #D9D9D9;
+    height: auto;
 }
 
 .event-circle {
     color: #D9D9D9;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 div.days > a {
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     border-radius: 10px;
     color: black;
@@ -250,6 +249,40 @@ div.days > a {
 .event-deets-text {
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+div.schedule-body {
+    background-color: #E6F4F3;
+}
+
+form.questions-form {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+form.questions-form > button {
+    background-color: #DC9C61;
+    color: white;
+    font-weight: 600;
+}
+
+input.form-control::placeholder {
+    color: white;
+}
+
+input.form-control, textarea.form-control {
+    background-color: #D9D9D9;
+}
+
+form.questions-form > input {
+    background-color: grey;
+}
+
+h3.form-title {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 25px;
 }
 
 h4.speaker-name, h6.speaker-job {

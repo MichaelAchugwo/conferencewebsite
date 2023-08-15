@@ -121,7 +121,6 @@ scheduleButton.addEventListener("click", function () {
     homeBody.classList.add("hide");
     registrationBody.classList.add("hide");
     speakersBody.classList.add("hide");
-    sponsorsBody.classList.add("hide");
     venueBody.classList.add("hide");
     navItems.style.display = "none";
     navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;

@@ -149,6 +149,7 @@ p.about-text {
     line-height: 2;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 h1.about-txt {
@@ -157,11 +158,12 @@ h1.about-txt {
     font-weight: 800;
     text-align: center;
     line-height: 1.4;
+    color: white;
 }
 
-body.speakers-body {
+div.speakers-body {
     margin: 0;
-    background-image: url("../images/speakers-bg-image.png");
+    background-image: url("../images/speakers-bg-image2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -203,10 +205,6 @@ div.days {
     color: #D9D9D9;
     font-size: 40px;
 }
-
-div.speakers-body {
-    background-color: #dff0ef;
-} 
 
 div.days > a {
     font-size: 20px;

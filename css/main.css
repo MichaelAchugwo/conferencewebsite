@@ -87,7 +87,6 @@ h1.buy-ticket-2 {
 
 h1.buy-ticket-2:hover {
     background-color: white;
-    opacity: 0.5;
     color: black;
 }
 
@@ -172,7 +171,7 @@ h1.our-speakers {
     color: black;
     font-family: 'Poppins', serif;
     font-weight: 800;
-    margin-top: 50px;
+    padding-top: 50px;
     line-height: 0.9;
 }
 
@@ -204,6 +203,10 @@ div.days {
     color: #D9D9D9;
     font-size: 40px;
 }
+
+div.speakers-body {
+    background-color: #dff0ef;
+} 
 
 div.days > a {
     font-size: 20px;
@@ -266,9 +269,13 @@ div.speakers-row {
 }
 
 h2.venue {
-    margin-top: 30px;
+    padding-top: 30px;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
+}
+
+div.venue-body {
+    background-color: #E8FBF9;
 }
 
 .map {

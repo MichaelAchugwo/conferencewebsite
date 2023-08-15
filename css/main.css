@@ -158,12 +158,10 @@ p.about-text {
     font-family: 'Poppins', sans-serif;
 }
 
-h1.dreams-txt {
+h1.about-txt {
     font-size: 50px;
-    color: black;
     font-family: 'Poppins', serif;
     font-weight: 800;
-    padding-top: 70px;
     text-align: center;
     line-height: 1.4;
 }

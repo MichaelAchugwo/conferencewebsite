@@ -40,6 +40,7 @@ homeButton.addEventListener("click", function () {
 aboutButton.addEventListener("click", function () {
   document.body.scrollTop = 618;
   document.documentElement.scrollTop = 618;
+  setTimeout(2000);
 });
 
 speakersButton.addEventListener("click", function () {

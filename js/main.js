@@ -33,31 +33,33 @@ registrationButton.addEventListener("click", function () {
 });
 
 homeButton.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  
-
+  homeBody.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  navItems.style.display = "none";
+  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 });
 
 aboutButton.addEventListener("click", function () {
-  document.body.scrollTop = 618;
-  document.documentElement.scrollTop = 618;
-  setTimeout(2000);
+  aboutBody.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  navItems.style.display = "none";
+  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 });
 
 speakersButton.addEventListener("click", function () {
-  document.body.scrollTop = 1218;
-  document.documentElement.scrollTop = 1218;
+  speakersBody.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  navItems.style.display = "none";
+  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 });
 
 scheduleButton.addEventListener("click", function () {
-  document.body.scrollTop = 1816;
-  document.documentElement.scrollTop = 1816;
+  scheduleBody.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  navItems.style.display = "none";
+  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 });
 
 venueButton.addEventListener("click", function () {
-  document.body.scrollTop = 2685;
-  document.documentElement.scrollTop = 2685;
+  venueBody.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  navItems.style.display = "none";
+  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 });
 
 

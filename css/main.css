@@ -13,7 +13,8 @@ div.home-body {
 div.header {
     border-bottom: 4px solid white;
     height: auto;
-    background-color: black;
+    background-color: hsl(177, 68%, 10%, 0.85);
+    backdrop-filter: blur(10px);
 }
 
 div.header > a {

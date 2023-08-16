@@ -29,11 +29,7 @@ navExpandBtn.addEventListener("click", function () {
   }
 });
 
-
-registrationButton.addEventListener("click", function () {
-
-});
-
+//Making page scroll to content based on the nav item clicked
 homeButton.addEventListener("click", function () {
   homeBody.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   navItems.style.display = "none";
@@ -64,6 +60,7 @@ venueButton.addEventListener("click", function () {
   navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 });
 
+//Adding Registration Overlay functionality
 function openNav() {
   document.getElementById("myOverlay").style.display = "block";
   document.getElementById("myOverlay").style.border = "5px solid aqua";

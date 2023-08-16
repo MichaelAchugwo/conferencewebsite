@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/registration.css">
     <link rel="icon" href="images/g14 icon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,29 +26,61 @@
     <title>Conference Website</title>
   </head>
 
-  <body style="background-color: #3ea5a0;">
+  <body style="background-color: #3ea5a0">
     <div id="myOverlay" class="overlay w-75">
       <a
         href="javascript:void(0)"
         class="closebtn text-decoration-none"
         onclick="closeNav()"
-        ><i class="fa-solid fa-xmark float-right"></i></a
-      >
+        ><i class="fa-solid fa-xmark float-right"></i
+      ></a>
       <div class="overlay-content">
         <div class="form-head text-white">Register</div>
         <form action="" class="registration-form text-white mx-auto pt-4">
           <div class="form-label">FULL NAME</div>
-          <input type="text" class="form-control" name="full-name" id="name" />
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            required
+          />
           <div class="form-label pt-3">E-MAIL</div>
-          <input type="text" class="form-control" name="email" id="email" />
+          <input
+            type="text"
+            class="form-control"
+            name="email"
+            id="email"
+            required
+          />
           <div class="form-label pt-3">PHONE NUMBER</div>
-          <input type="text" class="form-control" name="phone" id="phone" />
+          <input
+            type="text"
+            class="form-control"
+            name="phone"
+            id="phone"
+            required
+          />
           <div class="form-label pt-3">ADDRESS</div>
-          <input type="text" class="form-control" name="address" id="phone" />
+          <input
+            type="text"
+            class="form-control"
+            name="address"
+            id="address"
+            required
+          />
           <div class="form-label pt-3">ORGANIZATION/COMPANY</div>
-          <input type="text" class="form-control" name="company" id="company" />
+          <input
+            type="text"
+            class="form-control"
+            name="company"
+            id="company"
+            required
+          />
           <div class="text-center text-lg-left pt-4">
-            <button type="submit" class="btn submit">Submit</button>
+            <button type="submit" class="btn submit" id="register">
+              Submit
+            </button>
           </div>
         </form>
       </div>
@@ -99,7 +130,8 @@
             >
             <a
               class="buy-ticket nav-links px-4 py-2 py-lg-1 d-block d-lg-inline-block"
-              id="registrationPage" onclick="openNav()"
+              id="registrationPage"
+              onclick="openNav()"
               >Register</a
             >
           </div>
@@ -124,16 +156,20 @@
               class="d-inline-block text-align-center time-stamp mr-lg-5 mb-5 float-lg-right mt-5"
             >
               <div class="timeboxes">
-                <p class="time-number">15</p>
+                <p class="time-number" id= "days"></p>
                 <p class="time-summary">DAYS</p>
               </div>
               <div class="timeboxes">
-                <p class="time-number">08</p>
+                <p class="time-number" id= "hours"></p>
                 <p class="time-summary">HOURS</p>
               </div>
               <div class="timeboxes">
-                <p class="time-number">23</p>
+                <p class="time-number" id= "minutes"></p>
                 <p class="time-summary">MINUTES</p>
+              </div>
+              <div class="timeboxes">
+                <p class="time-number" id= "seconds"></p>
+                <p class="time-summary">SECONDS</p>
               </div>
             </div>
           </div>
@@ -143,29 +179,31 @@
         <div class="about mx-auto ml-lg-5 py-5 w-75">
           <h1 class="about-txt">About Us</h1>
           <p class="about-text text-center">
-            GC14 is a forward-thinking web development company dedicated to crafting
-            exceptional digital experiences. With a passion for innovation and a
-            commitment to excellence, we specialize in creating dynamic websites and
-            web applications that seamlessly blend aesthetics with functionality.
-            Our team of skilled developers, designers, and strategists work
-            collaboratively to bring visions to life, utilizing cutting-edge
-            technologies and industry best practices. At GC14, we believe that every
-            project is an opportunity to make an impact. Our focus goes beyond just
-            lines of code; we prioritize understanding our clients' unique needs and
-            goals, ensuring that the final product not only meets but exceeds
-            expectations. With a diverse portfolio spanning various industries, we
-            take pride in our ability to deliver solutions that resonate with target
-            audiences and drive tangible results. We bring to you the opportunity to
-            enhance your skill on web development. Attending our conference on web
-            development offers you a platform to stay updated with the latest
-            industry trends, tools, and best practices. Participants can learn about
-            cutting-edge techniques, network with professionals, and gain insights
-            into solving real-world challenges. With the rapid evolution of online
-            platforms, our conference provides an opportunity for attendees to
-            enhance their skills, exchange ideas, and collaborate with experts,
-            ensuring they remain at the forefront of this fast-paced field. Join us
-            on this exciting adventure as we redefine web development and shape the
-            future of online experiences
+            GC14 is a forward-thinking web development company dedicated to
+            crafting exceptional digital experiences. With a passion for
+            innovation and a commitment to excellence, we specialize in creating
+            dynamic websites and web applications that seamlessly blend
+            aesthetics with functionality. Our team of skilled developers,
+            designers, and strategists work collaboratively to bring visions to
+            life, utilizing cutting-edge technologies and industry best
+            practices. At GC14, we believe that every project is an opportunity
+            to make an impact. Our focus goes beyond just lines of code; we
+            prioritize understanding our clients' unique needs and goals,
+            ensuring that the final product not only meets but exceeds
+            expectations. With a diverse portfolio spanning various industries,
+            we take pride in our ability to deliver solutions that resonate with
+            target audiences and drive tangible results. We bring to you the
+            opportunity to enhance your skill on web development. Attending our
+            conference on web development offers you a platform to stay updated
+            with the latest industry trends, tools, and best practices.
+            Participants can learn about cutting-edge techniques, network with
+            professionals, and gain insights into solving real-world challenges.
+            With the rapid evolution of online platforms, our conference
+            provides an opportunity for attendees to enhance their skills,
+            exchange ideas, and collaborate with experts, ensuring they remain
+            at the forefront of this fast-paced field. Join us on this exciting
+            adventure as we redefine web development and shape the future of
+            online experiences
           </p>
         </div>
       </div>
@@ -173,7 +211,7 @@
         <h1 class="our-speakers text-center text-lg-left ml-0 ml-lg-5">
           Our<br /><span class="text-white">Speakers</span>
         </h1>
-  
+
         <div class="row speakers-row w-100 text-center pb-5 mx-0 text-white">
           <div
             class="col-5 col-lg-2 px-0 pb-4 pb-lg-0 speaker-pictures mx-auto mb-4 border-0 h-auto"
@@ -277,7 +315,9 @@
                 <div class="event-deets col-10">
                   <h5 class="event-deets-text">8:00am - 9:00am</h5>
                   <h3 class="event-deets-text">Grand Opening</h3>
-                  <h6 class="event-deets-text">By Ojiaku Prosper, CEO DEVPLACE</h6>
+                  <h6 class="event-deets-text">
+                    By Ojiaku Prosper, CEO DEVPLACE
+                  </h6>
                 </div>
               </div>
               <div
@@ -324,7 +364,9 @@
                 <div class="event-deets col-10">
                   <h5 class="event-deets-text">11:00am - 12:00am</h5>
                   <h3 class="event-deets-text">Conference Closing</h3>
-                  <h6 class="event-deets-text">By Ojiaku Prosper, CEO DEVPLACE</h6>
+                  <h6 class="event-deets-text">
+                    By Ojiaku Prosper, CEO DEVPLACE
+                  </h6>
                 </div>
               </div>
             </div>
@@ -379,11 +421,8 @@
       </div>
     </div>
 
-
-
-
-
     <script src="js/main.js"></script>
+    <script type="module" src="js/backend.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.js"
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="

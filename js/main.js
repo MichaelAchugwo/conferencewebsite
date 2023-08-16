@@ -16,6 +16,11 @@ var scheduleButton = document.getElementById("schedulePage");
 var registrationButton = document.getElementById("registrationPage");
 var regButton = document.getElementsByClassName("buy-ticket");
 var body = document.getElementById("body");
+var countdownDay = document.getElementById("days");
+var countdownHour = document.getElementById('hours');
+var countdownMinute = document.getElementById('minutes');
+var countdownSecond = document.getElementById('seconds');
+
 
 //Making the navbar responsive
 navItems.style.display = "none";
@@ -77,4 +82,22 @@ function closeNav() {
   body.style.opacity = "1.0";
 }
 
+//Adding Functionality to Countdown Timer
+var targetDate = new Date('2023-08-17T00:00:00').getTime();
+
+var x = setInterval(function() {
+  var currentDate = new Date().getTime();
+
+  var timeRemaining = targetDate - currentDate;
+
+  var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  countdownDay.innerHTML = `${days}`;
+  countdownHour.innerHTML = `${hours}`;
+  countdownMinute.innerHTML = `${minutes}`;
+  countdownSecond.innerHTML = `${seconds}`;
+}, 1000);
 

@@ -14,6 +14,8 @@ var speakersButton = document.getElementById("speakersPage");
 var venueButton = document.getElementById("venuePage");
 var scheduleButton = document.getElementById("schedulePage");
 var registrationButton = document.getElementById("registrationPage");
+var regButton = document.getElementsByClassName("buy-ticket");
+var body = document.getElementById("body");
 
 //Making the navbar responsive
 navItems.style.display = "none";
@@ -61,5 +63,21 @@ venueButton.addEventListener("click", function () {
   navItems.style.display = "none";
   navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 });
+
+function openNav() {
+  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("myOverlay").style.border = "5px solid aqua";
+  navItems.style.display = "none";
+  navExpandBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+  body.style.backgroundColor = "black";
+  body.style.opacity = "0.7"
+  
+}
+
+function closeNav() {
+  document.getElementById("myOverlay").style.display = "none";
+  body.style.background = "black";
+  body.style.opacity = "1.0";
+}
 
 

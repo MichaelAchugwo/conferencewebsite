@@ -84,7 +84,6 @@ function closeNav() {
 
 //Adding Functionality to Countdown Timer
 var targetDate = new Date('2023-08-17T00:00:00').getTime();
-
 var x = setInterval(function() {
   var currentDate = new Date().getTime();
 

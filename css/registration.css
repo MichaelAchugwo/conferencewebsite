@@ -43,12 +43,3 @@ form.registration-form > input {
 overlay a:hover {
     background-color: #f2f2f2;
 }
-
-@media screen and (max-width: 900px) {
-  .overlay {
-    width: 75%
-  }
-  form.registration-form {
-    width: 100%;
-  }
-}
